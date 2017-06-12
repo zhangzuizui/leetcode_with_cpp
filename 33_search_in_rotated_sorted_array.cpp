@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int findPivot(vector<int> nums, int l, int r){
+    int findPivot(vector<int> nums, int l, int r) {
         if (l < r-1){
             int mid = (l + r) / 2;
             if (nums[l] > nums[r]){
@@ -16,7 +16,7 @@ public:
             return l;
         }
     }
-    int binarySearch(vector<int> nums, int l, int r, int target){
+    int binarySearch(vector<int> nums, int l, int r, int target) {
         if (l <= r){
             int mid = (l + r) / 2;
             if (nums[mid] < target)
