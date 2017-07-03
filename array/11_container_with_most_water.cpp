@@ -1,3 +1,6 @@
+/**
+ * 头尾双指针，高度小的那个往里遍历(肯定要保留高度相对较高的线才可能得到最大面积，因为面积是按高度小的线算的)
+ */
 class Solution {
 public:
     int maxArea(vector<int>& height) {

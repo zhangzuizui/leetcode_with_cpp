@@ -1,3 +1,7 @@
+/**
+ * 因为要找的是第一个miss的正数，所以把每一个正数的num都放在num-1的位置
+ * 然后再遍历一遍发现哪个正数num不在num-1位置就行了
+ */
 class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {

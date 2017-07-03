@@ -1,6 +1,10 @@
+/** 
+ * 二分查找最基本题型
+ */
 class Solution {
 public:
     int binarySearch(vector<int>& nums, int target, int l, int r){
+        
         int mid = (l + r) >> 1;
         if (l <= r){
             if (nums[mid] < target)
@@ -9,11 +13,14 @@ public:
                 return binarySearch(nums, target, l, mid-1);
         }
         else
-            return max(l, r);
+            return l;
     }
+    
     int searchInsert(vector<int>& nums, int target) {
+        
         if (nums.empty())
             return 0;
+        
         return binarySearch(nums, target, 0, nums.size()-1);
     }
 };

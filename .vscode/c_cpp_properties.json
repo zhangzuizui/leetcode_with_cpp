@@ -15,7 +15,8 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "intelliSenseMode": "clang-x64"
         },
         {
             "name": "Linux",
@@ -32,12 +33,13 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "intelliSenseMode": "clang-x64"
         },
         {
             "name": "Win32",
             "includePath": [
-                "C:/MinGW/include", 
+                "C:/MinGW/include",
                 "C:/MinGW/lib/gcc/mingw32/5.3.0/include"
             ],
             "defines": [
@@ -46,12 +48,13 @@
             ],
             "browse": {
                 "path": [
-                "C:/MinGW/include", 
-                "C:/MinGW/lib/gcc/mingw32/5.3.0/include"
+                    "C:/MinGW/include",
+                    "C:/MinGW/lib/gcc/mingw32/5.3.0/include"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "intelliSenseMode": "msvc-x64"
         }
     ]
 }
