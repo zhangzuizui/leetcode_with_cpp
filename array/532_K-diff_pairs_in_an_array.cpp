@@ -1,35 +1,36 @@
-/** 没啥好说的 */
+/** 总之就是用hash */
 class Solution {
 public:
     int findPairs(vector<int>& nums, int k) {
         
-        if (nums.size() < 2) return 0;
+        if (k < 0) return 0;
         
-        int ans = 0;
-        if (k > 0) {
-            set<int> s(nums.begin(), nums.end());
-            auto l = s.begin(), r = s.begin();
-            while (l != s.end() && r != s.end()) {
-                int diff = *r - *l;
-                if (diff < k) ++r;
-                else if (diff > k) ++l;
-                else {
-                    ++ans;
-                    ++r;
-                    ++l;
+        unordered_map<int, int> hash;
+        int count = 0;
+        for (int n : nums) {
+         
+            if (hash.find(n) == hash.end()) hash.insert({n, 1});
+            else hash[n] = 2;            
+            
+        }
+        
+        for (int n : nums) {
+            
+            if (hash.find(n) != hash.end()) {                
+                if (hash[n]) {
+                    
+                    --hash[n];
+                    if (hash[n+k]) ++count;
+                    if (k == 0) hash[n] = 0;
+                    if (hash[n-k]) ++count;
+                    
+                    hash[n] = 0;
                 }
             }
         }
-        if (k == 0) {
-            sort(nums.begin(), nums.end());
-            int pre = nums[0]-1;
-            for (int i = 0; i < nums.size()-1; ++i) {
-                if (nums[i] == nums[i+1] && pre != nums[i+1])
-                    ++ans;
-                pre = nums[i];
-            }
-        }
-        return ans;
+        
+        return count;
+        
     }
 };
 

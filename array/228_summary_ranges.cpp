@@ -6,8 +6,7 @@ public:
         if (nums.empty()) return ans;
         
         int left = 0, right = 1, len = nums.size();
-        string cur;
-        
+        string cur;        
         while (right <= len) {
             
             if (right == nums.size() || nums[right] - nums[right-1] != 1) {
@@ -20,10 +19,12 @@ public:
                 cur.clear();
                 left = right;
             }
+
             ++right;
+
         }
-        
+
         return ans;
-        
+               
     }
 };

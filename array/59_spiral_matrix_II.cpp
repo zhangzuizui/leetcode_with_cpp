@@ -1,3 +1,4 @@
+/** 思路基本同54 */
 class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {

@@ -1,3 +1,4 @@
+/** 动态维护一个求和的窗口，和不够就往右边＋，和够了就在左边－，扫描一遍 */
 class Solution {
 public:
     int minSubArrayLen(int s, vector<int>& nums) {
@@ -23,7 +24,7 @@ public:
         
     }
 };
-/* 感觉都是O(n)，但是不知道为啥像上面那样写比下面这个慢很多 */
+/** 感觉都是O(n)，但是不知道为啥像上面那样写比下面这个慢很多 */
 class Solution {
 public:
     int minSubArrayLen(int s, vector<int>& nums) {

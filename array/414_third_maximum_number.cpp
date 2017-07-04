@@ -6,11 +6,16 @@
  class Solution {
 public:
     int thirdMax(vector<int>& nums) {
+
         set<int> top3;
         for (int n : nums) {
+
             if (top3.insert(n).second && top3.size() > 3)
                 top3.erase(top3.begin());
+
         }
-        return top3.size() > 2 ? *top3.begin() : *top3.rbegin();
+
+        return top3.size() > 2 ? *top3.begin() : *top3.end();
+
     }
 };

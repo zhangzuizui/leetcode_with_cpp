@@ -1,21 +1,25 @@
-/* hashmap运用不到位啊，按这个题来看unordered_set的删除和查找的平均时间都是O(1)
- * 是时候看一下STL了
+/**
+ * 用hashset一个，然后对每个满足条件的目标数（hash中存在） 分别向左向右查找，并把查到的数删去
  */
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
-        unordered_set<int> arr(nums.begin(), nums.end());
+
+        unordered_set<int> hash(nums.begin(), nums.end());
         int res = 0;
         for (int n : nums) {
-            if (arr.find(n) == arr.end()) continue;
-            arr.erase(n);
+
+            if (hash.find(n) == hash.end()) continue;
+
+            hash.erase(n);
             int pre = n, next = n;
-            while (arr.find(pre - 1) != arr.end()) arr.erase(--pre);
-            while (arr.find(next + 1) != arr.end()) arr.erase(++next);
+            while (hash.find(pre - 1) != hash.end()) hash.erase(--pre);
+            while (hash.find(next + 1) != hash.end()) hash.erase(++next);
             res = max(res, next - pre + 1);
+
         }
-        
-        //cout << res << endl;
+               
         return res;
+
     }
 };

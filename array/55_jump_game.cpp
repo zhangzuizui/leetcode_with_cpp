@@ -1,8 +1,11 @@
+/**
+ * 从大到小遍历，看之前是否有一个位置能跳到后面的这个当前位置
+ */
 class Solution {
 public:
     bool canJump(vector<int>& nums) {
-        int z = nums.size() - 1, a = z;
-        for (int i = z; i >= 0; --i){
+        int end = nums.size() - 1, a = end;
+        for (int i = end; i >= 0; --i){
             if (nums[i] + i >= a){
                 a = i;
             }
@@ -16,10 +19,11 @@ public:
 class Solution {
 public:
     bool canJump(vector<int>& nums) {
+        
         int max_loc = 0, z = nums.size() - 1;
-        for (int i = 0; i < z && i <= max_loc && max_loc < z; ++i){
+        for (int i = 0; i < z && i <= max_loc && max_loc < z; ++i)
             max_loc = max(max_loc, nums[i] + i);
-        }
+            
         return max_loc >= z;
     }
 };

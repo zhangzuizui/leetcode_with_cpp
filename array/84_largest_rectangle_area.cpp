@@ -12,26 +12,30 @@
  *可以算出与A相关的矩形的最大面积----其实就是上面方括号框起来的情况\
  *第二点就很简单了，就是用一个栈存放一个到目前为止未得到面积最大情况的点们的下标，
  *根据第一点的分析容易知道，这个栈里存放的下标对应的值的序列，是一个递增序列
- *因为遇到更小的值的时候，就能算出之前那些更大值对应的最大面积了，
- *所以更大值对应的面积计算完之后就没卵用了，弹出即可
+ *这样遇到更小的高度的时候，就能算出之前那些较大高度对应的最大面积了，
+ *所以较大高度对应的面积计算完之后就没用了，弹出即可
 */
 class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
+
         if (heights.empty()) return 0;
         int max_area = 0;
         heights.push_back(0);
         stack<int> s;
         s.push(-1);
-        for (int i = 0; i < heights.size(); ++i) {
+        for (int i = 0; i < heights.size(); ++i) {            
             while (s.top() != -1 && heights[i] < heights[s.top()]) {
+
                 int h = heights[s.top()];
                 s.pop();
                 max_area = max(max_area, h * (i - s.top() - 1));
-                //cout << i << '\t' << h << '\t' << max_area << endl;
+                
             }
             s.push(i);
         }
+
         return max_area;
+        
     }
 };

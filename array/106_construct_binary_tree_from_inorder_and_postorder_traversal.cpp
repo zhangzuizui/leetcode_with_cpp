@@ -11,16 +11,15 @@ class Solution {
 public:
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
         
-        if (inorder.empty()) {
-            return NULL;
-        }
+        if (inorder.empty()) return NULL;
+            
         TreeNode *left, *right, *cur;
         int len = inorder.size(), i = len - 1, p = len - 2, flag = 1;
         TreeNode *root = new TreeNode(postorder[len-1]);
         stack<TreeNode*> s;
         s.push(root);
-        
         while(p >= 0) {
+
             if (!s.empty() && s.top()->val == inorder[i]) {
                 cur = s.top();
                 s.pop();
@@ -42,8 +41,8 @@ public:
                     flag = 1;
                 }
             }
-        }
-        
+
+        }  
         
         return root;
     }
