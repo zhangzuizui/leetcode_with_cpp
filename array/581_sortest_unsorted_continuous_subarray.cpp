@@ -1,5 +1,23 @@
+/**
+ * 这个思路是，确定左边的区间时，从右边开始扫，并且完整的扫描一遍
+ * 反之亦然，这样两次扫描后就直接确定了两个区间(因为不存在未判断的部分)
+ */
+class Solution {
+public:
+    int findUnsortedSubarray(vector<int>& nums) {
+        int s = -1, e = -2, m = nums[0], n = nums.back();
+        for (int i = 1; i < nums.size(); i++) {
+            m = max(nums[i], m);
+            n = min(nums[nums.size()- i - 1], n);
+            if (nums[i] < m) e = i;
+            if (nums[nums.size()- i - 1] > n) s = nums.size() - i - 1;
+        }
+        return e - s + 1;
+    }
+};
+
 /** 
- * 我的思路是正向思路，找数组左侧的连续部分时，从左扫描
+ * 我的思路是找数组左侧的连续部分时，从左扫描
  * 找数组右侧的连续部分时，从右侧扫描
  * 这样做会出现一个问题就是：虽然我得到了两个连续部分
  * 但是确定左边连续部分时，右边有值未扫描过，
@@ -29,7 +47,6 @@ public:
             }
         }
         
-        cout << l << "  " << r << endl;
         if (l == r) return 0;
         int midMin = INT_MAX, midMax = INT_MIN;
         
@@ -49,20 +66,3 @@ public:
      }
 };
 
-/**
- * 这个思路是，确定左边的区间时，从右边开始扫，并且完整的扫描一遍
- * 反之亦然，这样两次扫描后就直接确定了两个区间(因为不存在未判断的部分)
- */
-class Solution {
-public:
-    int findUnsortedSubarray(vector<int>& nums) {
-        int s = -1, e = -2, m = nums[0], n = nums.back();
-        for (int i = 1; i < nums.size(); i++) {
-            m = max(nums[i], m);
-            n = min(nums[nums.size()- i - 1], n);
-            if (nums[i] < m) e = i;
-            if (nums[nums.size()- i - 1] > n) s = nums.size() - i - 1;
-        }
-        return e - s + 1;
-    }
-};

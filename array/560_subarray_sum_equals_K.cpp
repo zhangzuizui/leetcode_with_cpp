@@ -3,6 +3,7 @@
  * 就是说虽然我们要找的是连续值的和为K
  * 但是可以转换成找累计和-K后的值，
  * 在之前的累计连续和中出现过
+ * https://discuss.leetcode.com/topic/87850/java-solution-presum-hashmap
  */
 class Solution {
 public:
