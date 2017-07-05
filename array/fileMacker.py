@@ -19,24 +19,26 @@ for one, two, files in cpps:
     L = files
 
 for l in lines:
+    writef.write('\n')
     findder = re.search("(.*)\(\)(.*)", l)
     if findder is None:
         writef.write(l)
         continue
-    writef.write('\n')
     testNo = re.search("([0-9]*)\.", findder.group(1)).group(1)
     testName = ''
     for l in L:
         if testNo in l:
-            testName = l      
+            testName = l
             break
+    testName = testName.replace("(", "\\(")
+    testName = testName.replace(")", "\\)")
     s = re.search("\. ([0-9a-zA-Z \'\-\_\(\)]+?)\]", findder.group(1)).group(1)
     s = s.replace(" - ", '-')
     s = s.replace(' ', '-')
     s = s.replace("'", '')
     s = s.lower()
     s = '(' + url + s + ')    '
-    l = findder.group(1) + s + findder.group(2) + "    [[我的题解](" + git_url + testName + ')]'
+    l = findder.group(1) + s + "[[我的题解](" + git_url + testName + ')]' + findder.group(2)
     writef.write(l)
 
 readf.close()

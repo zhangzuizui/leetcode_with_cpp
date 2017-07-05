@@ -5,11 +5,11 @@
 
 [167. Two Sum II - Input array is sorted]()跟题1没太大区别
 
-[15. 3Sum]()题1. T解法的升级版
+[15. 3Sum]()题1解法的升级版
 
-[16. 3Sum Closest]()题15. 3Sum的改版
+[16. 3Sum Closest]()题15的改版
 
-[18. 4Sum]()题15. 3Sum再升级
+[18. 4Sum]()题15再升级
 
 [268. Missing Number]()这个不是双指针，但是是归位系列
 
@@ -25,7 +25,7 @@
 
 [209. Minimum Size Subarray Sum]()非首尾指针的双指针题型
 
-[287. Find the Duplicate Number]()快慢指针双指针题型，必看[[题解](http://keithschwarz.com/interesting/code/?dir=find-duplicate)]
+[287. Find the Duplicate Number]()快慢指针双指针题型[[必看题解](http://keithschwarz.com/interesting/code/?dir=find-duplicate)]
 
 
 ## 找数学规律
@@ -33,7 +33,7 @@
 
 [189. Rotate Array]()顺序表经典例题
 
-[169. Majority Element]()这个[[题解](https://discuss.leetcode.com/topic/17446/6-suggested-solutions-in-c-with-explanations)]讲了很多种方式对这道题进行解答，思路瞬间开阔无比
+[169. Majority Element]()这个[[必看题解](https://discuss.leetcode.com/topic/17446/6-suggested-solutions-in-c-with-explanations)]讲了很多种方式对这道题进行解答，思路瞬间开阔无比
 
 [229. Majority Element II]()题169的升级版
 
