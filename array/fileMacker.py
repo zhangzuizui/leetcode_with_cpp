@@ -35,8 +35,8 @@ for l in lines:
     s = s.replace(' ', '-')
     s = s.replace("'", '')
     s = s.lower()
-    s = '(' + url + s + ')'
-    l = findder.group(1) + s + findder.group(2) + "\t我的题解和解释点[这里](" + git_url + testName + ')'
+    s = '(' + url + s + ')    '
+    l = findder.group(1) + s + findder.group(2) + "    [[我的题解](" + git_url + testName + ')]'
     writef.write(l)
 
 readf.close()

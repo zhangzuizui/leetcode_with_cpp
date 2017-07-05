@@ -1,11 +1,11 @@
 # 我是标题
 
 ## 双指针
-[1. Two Sum]()Hash, Two Pointers
+[1. Two Sum]()
 
 [167. Two Sum II - Input array is sorted]()跟题1没太大区别
 
-[15. 3Sum]()题1. Two Pointers解法的升级版
+[15. 3Sum]()题1. T解法的升级版
 
 [16. 3Sum Closest]()题15. 3Sum的改版
 
@@ -25,7 +25,7 @@
 
 [209. Minimum Size Subarray Sum]()非首尾指针的双指针题型
 
-[287. Find the Duplicate Number]()快慢指针双指针题型，必看[题解](http://keithschwarz.com/interesting/code/?dir=find-duplicate)
+[287. Find the Duplicate Number]()快慢指针双指针题型，必看[[题解](http://keithschwarz.com/interesting/code/?dir=find-duplicate)]
 
 
 ## 找数学规律
@@ -33,7 +33,7 @@
 
 [189. Rotate Array]()顺序表经典例题
 
-[169. Majority Element]()这个[题解]((https://discuss.leetcode.com/topic/17446/6-suggested-solutions-in-c-with-explanations))讲了很多种方式对这道题进行解答，思路瞬间开阔无比
+[169. Majority Element]()这个[[题解](https://discuss.leetcode.com/topic/17446/6-suggested-solutions-in-c-with-explanations)]讲了很多种方式对这道题进行解答，思路瞬间开阔无比
 
 [229. Majority Element II]()题169的升级版
 
@@ -111,11 +111,11 @@
 
 [154. Find Minimum in Rotated Sorted Array II]()需要注意的是因为 (r > (l+r)/2 >= l) 所以在使用二分查找的时候尽量以r为基准，会省很多事
 
-[33. Search in Rotated Sorted Array]()Binary Search 一个变种的二分查找
+[33. Search in Rotated Sorted Array]()一个变种的二分查找
 
 [81. Search in Rotated Sorted Array II]()
 
-[34. Search for a Range]()Binary Search
+[34. Search for a Range]()
 
 ## 回溯 
 **回溯法的精髓是，一个序列里每个元素有两种选择，在某一个循环体内，是不选（会pop掉），在循环体的入口是选**
@@ -165,11 +165,11 @@
 ## 栈
 [84. Largest Rectangle in Histogram]()思路比较难的一个栈
 
-[85. Maximal Rectangle]()可以根据84做，另外这个[动态规划的思路](https://discuss.leetcode.com/topic/6650/share-my-dp-solution)十分棒
+[85. Maximal Rectangle]()可以根据84做，另外这个[[动态规划的思路](https://discuss.leetcode.com/topic/6650/share-my-dp-solution)十分棒]
 
 [105. Construct Binary Tree from Preorder and Inorder Traversal]()另可以用递归解
 
-[106. Construct Binary Tree from Inorder and Postorder Traversal]()另一个java写的超清晰[递归解](https://discuss.leetcode.com/topic/3296/my-recursive-java-code-with-o-n-time-and-o-n-space)
+[106. Construct Binary Tree from Inorder and Postorder Traversal]()另一个java写的超清晰[[递归解](https://discuss.leetcode.com/topic/3296/my-recursive-java-code-with-o-n-time-and-o-n-space)]
 
 
 ## hash
