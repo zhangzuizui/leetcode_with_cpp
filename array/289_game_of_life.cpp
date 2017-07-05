@@ -1,4 +1,4 @@
-/* 这个思路很关键，靠二进制的高低位表示现态和原态 */
+/** 这个思路很关键，靠二进制的高低位表示现态和原态 */
 class Solution {
 public:
     void gameOfLife(vector<vector<int>>& board) {

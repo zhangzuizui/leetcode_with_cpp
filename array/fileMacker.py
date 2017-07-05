@@ -43,7 +43,7 @@ for l in lines:
     s = s.replace(")", '')
     s = s.lower()
     s = '(' + url + s + ')    '
-    l = findder.group(1) + s + "[[我的题解](" + git_url + testName + ')]' + findder.group(2)
+    l = findder.group(1) + s + "　　[[我的题解](" + git_url + testName + ')]' + findder.group(2)
     writef.write(l)
 
 readf.close()

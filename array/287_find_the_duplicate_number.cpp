@@ -1,6 +1,6 @@
-/* 这个解法简直excellent！ 
+/** 这个解法简直excellent！ 
  * http://keithschwarz.com/interesting/code/?dir=find-duplicate
-*/
+ */
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {

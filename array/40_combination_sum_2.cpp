@@ -1,7 +1,7 @@
-/*
-注意回溯法的使用，不要简单的递归
-正确的使用回溯法可以少开很多空间，节省大量的空间与时间
-*/
+/**
+ * 注意回溯法的使用，不要简单的递归
+ * 正确的使用回溯法可以少开很多空间，节省大量的空间与时间
+ */
 class Solution {
 public:
     void findAns(vector<int> candidates, int target, vector<vector<int>>& ans, int begin, int end, vector<int>& cur){

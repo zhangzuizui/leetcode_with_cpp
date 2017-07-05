@@ -1,4 +1,4 @@
-/* 题目描述有问题，总之只有一个peak，若端点为peak则以左边哪个为准。*/
+/** 题目描述有问题，总之只有一个peak，若端点为peak则以左边哪个为准。*/
 class Solution {
 public:
     int findPeakElement(vector<int>& nums) {

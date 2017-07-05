@@ -1,4 +1,4 @@
-/* 没啥说的，标准回溯，就是回溯条件的判定注意一下 */
+/** 没啥说的，标准回溯，就是回溯条件的判定注意一下 */
 class Solution {
 public:
     void backTracking(int k, int n, int begin, vector<vector<int>>& ans, vector<int>& cur) {

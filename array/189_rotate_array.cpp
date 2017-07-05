@@ -1,4 +1,4 @@
-/* 这种题型，记住 */
+/** 这种题型，记住 */
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {

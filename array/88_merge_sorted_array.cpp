@@ -1,4 +1,4 @@
-/*这个题目描述是有问题的，但是这个解题的思想可以学一下*/
+/** 这个题目描述是有问题的，但是这个解题的思想可以学一下 */
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
