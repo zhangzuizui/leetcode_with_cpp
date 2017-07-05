@@ -27,15 +27,20 @@ for l in lines:
     testNo = re.search("([0-9]*)\.", findder.group(1)).group(1)
     testName = ''
     for l in L:
-        if testNo in l:
+        lNo = re.search("([0-9]*)_", l).group(1)
+        if testNo == lNo:
             testName = l
             break
     testName = testName.replace("(", "\\(")
     testName = testName.replace(")", "\\)")
+    testName = testName.replace("_", "\_")
     s = re.search("\. ([0-9a-zA-Z \'\-\_\(\)]+?)\]", findder.group(1)).group(1)
     s = s.replace(" - ", '-')
+    s = s.replace(')-', '')
     s = s.replace(' ', '-')
     s = s.replace("'", '')
+    s = s.replace("(", '')
+    s = s.replace(")", '')
     s = s.lower()
     s = '(' + url + s + ')    '
     l = findder.group(1) + s + "[[我的题解](" + git_url + testName + ')]' + findder.group(2)
