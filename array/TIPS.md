@@ -19,8 +19,8 @@
 [75. Sort Colors](https://leetcode.com/problems/sort-colors)归位型的题型，就是把元素放回它应该在的位置	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/75_sort_colors.cpp)
 
 [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)这也是一个归位系列的题，就是把一个数放到其正确的位置	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/88_merge_sorted_array.cpp)
-[11. Container With Most Water](https://leetcode.com/problems/container-with-most-water)
 
+[11. Container With Most Water](https://leetcode.com/problems/container-with-most-water)	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/118_pascal's_triangle.cpp)
 
 [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)个人觉得是题11的升级版	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/42_trapping_rain_water.cpp)
 
@@ -100,7 +100,6 @@
 [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)转换关键信息的存储方式	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/73_set_matrix_zeros.cpp)
 
 [289. Game of Life](https://leetcode.com/problems/game-of-life)同上，定义新的信息存储方式以有限的空间容纳更多的信息量	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/289_game_of_life.cpp)
-
 ## 二分查找
 
 [35. Search Insert Position](https://leetcode.com/problems/search-insert-position)最基本二分	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/35_search_insert_position.cpp)
@@ -118,7 +117,6 @@
 [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/381_Insert_delete_getRandom_O(1) - duplicates_allowed.cpp)
 
 [34. Search for a Range](https://leetcode.com/problems/search-for-a-range)Binary Search	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/34_search_for_a_range.cpp)
-
 ## 回溯 
 **回溯法的精髓是，一个序列里每个元素有两种选择，在某一个循环体内，是不选（会pop掉），在循环体的入口是选**
 
@@ -139,7 +137,6 @@
 [55. Jump Game](https://leetcode.com/problems/jump-game)基本的贪心算法	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/55_jump_game.cpp)
 
 [45. Jump Game II](https://leetcode.com/problems/jump-game-ii)贪心算法，想要复杂度最优需要考虑贪心的条件	我的题解和解释点[这里](https://github.com/zhangzuizui/leetcode_with_cpp/tree/master/array/45_jump_game_II.cpp)
-
 ## DP
 **DP的关键就在于：定位子问题以及找到子问题的联系点**
 
