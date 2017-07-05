@@ -1,7 +1,7 @@
 # 我是标题
 
 ## 双指针
-[1. Two Sum](https://leetcode.com/problems/two-sum)Hash, Two Pointers
+[1. Two Sum]()Hash, Two Pointers
 
 [167. Two Sum II - Input array is sorted]()跟题1没太大区别
 
@@ -53,7 +53,7 @@
 
 [31. Next Permutation]()数学方法解
 
-[4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)Divide and Conquer 总之是用一种数学方法解
+[4. Median of Two Sorted Arrays]()分治法解
 
 [41. First Missing Positive]()找规律解
 
@@ -118,7 +118,7 @@
 [34. Search for a Range]()Binary Search
 
 ## 回溯 
-回溯法的精髓是，一个序列里每个元素有两种选择，在某一个循环体内，是不选（会pop掉），在循环体的入口是选
+**回溯法的精髓是，一个序列里每个元素有两种选择，在某一个循环体内，是不选（会pop掉），在循环体的入口是选**
 
 [78. Subsets]()最基本回溯
 
@@ -138,7 +138,7 @@
 [45. Jump Game II]()贪心算法，想要复杂度最优需要考虑贪心的条件
 
 ## DP
-DP的关键就在于：定位子问题以及找到子问题的联系点
+**DP的关键就在于：定位子问题以及找到子问题的联系点**
 
 [53. Maximum Subarray]()最简单的DP
 
@@ -158,7 +158,7 @@ DP的关键就在于：定位子问题以及找到子问题的联系点
 
 
 ## 深度优先遍历
-一般dfs写成栈的形式比较万用，递归写法的好处是结构清晰
+**一般dfs写成栈的形式比较万用，递归写法的好处是结构清晰**
 [79. Word Search]()
 
 
