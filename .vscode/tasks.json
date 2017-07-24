@@ -1,20 +1,10 @@
 {
     "version": "0.1.0",
     "command": "g++",
-    "args": [
-        "-g",
-        "-std=c++11",
-        //"-g++",
-        "${file}",
-        "-o",
-        "${file}.exe"
-    ], // 编译命令参数
+    "args": ["-g","-std=c++11","${file}","-o","${file}.exe"], // 编译命令参数
     "problemMatcher": {
         "owner": "typescript",
-        "fileLocation": [
-            "relative",
-            "${workspaceRoot}"
-        ],
+        "fileLocation": ["relative","${workspaceRoot}"],
         "pattern": {
             "regexp": "^TypeScript (warning|error): (.*)\\((\\d+),(\\d+)\\): (.*)$",
             "severity": 1,
