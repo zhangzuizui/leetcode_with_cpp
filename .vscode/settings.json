@@ -4,7 +4,7 @@
         "initializer_list": "cpp",
         "*.tcc": "cpp"
     },
-    "clang.executable": "C:\\Program Files\\LLVM\bin\\clang",
+    "clang.executable": "C:\\Program Files\\LLVM\\bin\\clang",
     "clang.completion.enable": true,
     "clang.cflags": [
         "-std=c99",
